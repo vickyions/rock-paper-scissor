@@ -1,0 +1,135 @@
+* {
+	line-height: 1.5;
+}
+body {
+	width: 100%;
+	background-color: #2e2c2c;
+	color: white;
+	font-family: monospace, sans-serif;
+}
+
+header {
+	padding: 20px 20px;	
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 800;
+	background-color: white;
+	color: #2e2c2c;
+}
+
+#round-input {
+	padding: 20px 20px;
+}
+
+#form1 {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+input {
+	height: 40px;
+	min-width: 200px;
+	width: 50%;
+	padding: 10px;
+	margin: 10px;
+	border: 2px solid orange;
+	border-radius: 5px;
+}
+
+button {
+	max-width: 120px;
+	min-width: 80px;
+	width: 20%;
+	height: 40px;
+	margin: 10px;
+	padding:0;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#result-section {
+	width: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-flow: row wrap;
+	gap: 20px;
+}
+
+.stats {
+	border: 2px solid #6b4d5c;
+	border-radius: 5px;
+	text-align: center;
+	padding: 10px;
+}
+
+.stats > p:last-child {
+	padding-top: 5px;
+}
+
+.stats > p:first-child {
+	border-bottom: 2px solid #6b4d5c;
+	padding-bottom: 5px;
+}
+
+#choice-section {
+	display: flex;
+	flex: row wrap;
+	gap: 10px;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 20px;
+}
+
+.choice {
+	--size: 90px;
+	min-width: var(--size);
+	min-height: var(--size);
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	border: 2px solid #bc501a;
+	transition: all 0.3s ease;
+}
+
+.choice:hover {
+	background-color: #7b9488;
+	color: #6e2500;
+}
+
+.game-result {
+	border: 2px solid #7b9488;
+	min-width: 300px;
+	width: 30%;
+	height: 130px;
+	margin: 20px auto;
+	text-align: center;
+}
+
+.game-result p {
+	padding: 10px;
+}
+
+[data-game-result] {
+	color: #798800;
+	font-size: 2em;
+	font-weight: 800;
+}
+
+.game-result#versus {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+}
+
+[data-user-choice-display] {
+	color: #FECD70;
+}
+
+[data-computer-choice-display] {
+	color: #E94560;
+}

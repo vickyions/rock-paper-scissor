@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta author="Vicky Soni" />
+        <meta description="Rock Paper Scissor" />
+        <title>Rock Paper Scissor</title>
+        <link rel="stylesheet" href="./reset.css" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header><h1>Rock Paper Scissor</h1></header>
+        <section id="round-input">
+            <form id="form1" method="POST" action="#">
+                <input
+                    type="number"
+                    data-game-number
+                    aria-label="No of games"
+                    min="1"
+                    max="15"
+                    placeholder="No of games?"
+                    required
+                />
+                <button class="btn" type="submit" data-play-game form="form1">
+                    Play
+                </button>
+            </form>
+        </section>
+        <section id="result-section">
+            <div class="stats">
+                <p>User Points</p>
+                <p data-user-points>-</p>
+            </div>
+            <div class="stats">
+                <p>Computer Points</p>
+                <p data-computer-points>-</p>
+            </div>
+            <div class="stats">
+                <p>Rounds Left</p>
+                <p data-rounds-left>-</p>
+            </div>
+            <div class="stats" id="round-result">
+                <p>Round Result</p>
+                <p data-round-result>-</p>
+            </div>
+        </section>
+        <section id="choice-section">
+            <div class="choice" data-rock>
+                <p>Rock</p>
+            </div>
+            <div class="choice" data-paper>
+                <p>Paper</p>
+            </div>
+            <div class="choice" data-scissor>
+                <p>Scissor</p>
+            </div>
+        </section>
+        <section id="game-result-section">
+            <div id="versus" class="game-result">
+                <p>User Choose-  <span data-user-choice-display></span></p>
+                <span>Versus</span>
+                <p>Computer Choose- <span data-computer-choice-display=""></span></p>
+            </div>
+            <div id="game-result" class="game-result">
+                <p>You</p>
+                <p data-game-result>-</p>
+                <p>this round</p>
+            </div>
+        </section>
+        <script src="./script.js" type="text/javascript"></script>
+    </body>
+</html>
